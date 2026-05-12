@@ -40,9 +40,12 @@ class person(BaseModel):
     DiabetesPedigreeFunction : float
     Age : float
 
-# @app.get("/")
-# def u():
- #   return "hello "
+
+@app.get("/")
+def u():
+    return "hello "
+
+
 # prediction
 @app.post('/predict')
 def predict(data:person):
